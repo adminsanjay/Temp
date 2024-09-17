@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+</div>
+    <style>
+        body {
+          background-image: url('me.webp');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+    </style>
+   
+    <header>
+        <h1>Welcome to our Merchandise</h1>
+        <input type="text" id="searchBar" onkeyup="searchItems()" placeholder="Search for merchandise...">
+        <nav>
+            <ul>
+                <li><a href="temp.html">Home</a></li>
+                <li><a href="#cart" onclick="viewCart()">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="filter-options">
+        <h3>Filter by:</h3>
+        <label>
+            <input type="checkbox" value="price-low-high" onclick="filterItems()"> Price: Low to High
+        </label>
+        <label>
+            <input type="checkbox" value="price-high-low" onclick="filterItems()"> Price: High to Low
+        </label>
+    </section>
+    <!-- Merchandise Section -->
+    <section id="merchandise">
+        <div class="product-grid">
+          <!-- Repeat for all T-shirts from 1 to 10 -->
+          <div class="product-card">
+            <img src="tshirt1.jpg" alt="T-shirt 1">
+            <h3>T-shirt 1</h3>
+            <p>Price: ₹400</p>
+            <button onclick="addToCart('tshirt-1')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="tshirt2.jpg" alt="T-shirt 2">
+            <h3>T-shirt 2</h3>
+            <p>Price: ₹400</p>
+            <button onclick="addToCart('tshirt-2')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="tshirt3.jpg" alt="T-shirt 3">
+            <h3>T-shirt 3</h3>
+            <p>Price: ₹400</p>
+            <button onclick="addToCart('tshirt-3')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="tshirt4.jpg" alt="T-shirt 4">
+            <h3>T-shirt 4</h3>
+            <p>Price: ₹400</p>
+            <button onclick="addToCart('tshirt-4')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="tshirt5.jpg" alt="T-shirt 5">
+            <h3>T-shirt 5</h3>
+            <p>Price: ₹400</p>
+            <button onclick="addToCart('tshirt-5')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="tshirt6.jpg" alt="T-shirt 6">
+            <h3>T-shirt 6</h3>
+            <p>Price: ₹400</p>
+            <button onclick="addToCart('tshirt-6')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="tshirt7.jpg" alt="T-shirt 7">
+            <h3>T-shirt 7</h3>
+            <p>Price: ₹400</p>
+            <button onclick="addToCart('tshirt-7')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="tshirt8.jpg" alt="T-shirt 8">
+            <h3>T-shirt 8</h3>
+            <p>Price: ₹400</p>
+            <button onclick="addToCart('tshirt-8')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="tshirt9.jpg" alt="T-shirt 9">
+            <h3>T-shirt 9</h3>
+            <p>Price: ₹400</p>
+            <button onclick="addToCart('tshirt-9')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="tshirt10.jpg" alt="T-shirt 10">
+            <h3>T-shirt 10</h3>
+            <p>Price: ₹400</p>
+            <button onclick="addToCart('tshirt-10')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="tshirt11.jpg" alt="T-shirt 11">
+            <h3>T-shirt 11</h3>
+            <p>Price: ₹400</p>
+            <button onclick="addToCart('tshirt-11')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="tshirt12.jpg" alt="T-shirt 12">
+            <h3>T-shirt 12</h3>
+            <p>Price: ₹400</p>
+            <button onclick="addToCart('tshirt-12')">Add to Cart</button>
+          </div>
+        </div>
+    </section>
+
+    <section id="cart" class="hidden">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
+        <div id="cart-total">
+            <h3>Total: ₹<span id="total-amount">0</span></h3>
+            <button onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Merchandise Store. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Event Notifications</title>
+    <style>
+        #notifications {
+            background-color: #f1f1f1;
+            padding: 10px;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Notifications</h1>
+    <div id="notifications"></div>
+
+    <script src="socket.js"></script>
+    <script>
+        const socket = io();
+
+        socket.on('eventUpdate', (data) => {
+            const notifications = document.getElementById('notifications');
+            const update = document.createElement('div');
+            update.innerHTML = `<strong>${data.title}:</strong> ${data.message}`;
+            notifications.appendChild(update);
+        });
+    </script>
+</body>
+</html>

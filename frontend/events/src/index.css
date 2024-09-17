@@ -1,0 +1,146 @@
+.head{
+  text-align:center ;
+}
+div{
+  text-align:center ;
+}
+
+*{
+  color: white;
+  background-color: rgb(69, 5, 99);
+  justify-content: left;
+}
+.card{
+  border: 1px solid hsl(79, 76%, 47%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(173, 70%, 13%, 0.107);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 1500px;
+  display: inline-block;
+  margin-left: auto;
+  width: 20%;
+  justify-content: flex-start;
+}
+
+.card .card-title{
+  font-family: Arial,sans-serif;
+  margin: 0;
+  color: hsl(0, 8%, 97%);
+}
+.card .card-text{
+  font-family: Arial,sans-serif;
+  color: hsl(0, 23%, 90%);
+}
+button {
+  border-radius: 2px;
+  color: rgb(23, 184, 39);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.ev{
+  border: 1px solid hsl(0, 22%, 75%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 69%, 48%, 0.107);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 1500px;
+  display: inline-block;
+}
+.ev.ev-image{
+  max-width: 60%;
+  height: auto;
+  border-radius: 70%;
+  margin-bottom: 5px;
+}
+.ev.ev-title{
+  font-family: Arial,sans-serif;
+  margin: 0;
+  color: hsl(0, 23%, 48%);
+}
+.ev.ev-text{
+  font-family: Arial,sans-serif;
+  color: hsl(0, 82%, 40%);
+}
+.work{
+  border: 1px solid hsl(0, 22%, 75%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 69%, 48%, 0.107);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 1500px;
+  display: inline-block;
+}
+.work.work-image{
+  max-width: 60%;
+  height: auto;
+  border-radius: 70%;
+  margin-bottom: 5px;
+}
+.work.work-title{
+  font-family: Arial,sans-serif;
+  margin: 0;
+  color: hsl(0, 23%, 48%);
+}
+.work.work-text{
+  font-family: Arial,sans-serif;
+  color: hsl(0, 82%, 40%);
+}
+.pitch{
+  border: 1px solid hsl(0, 22%, 75%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 69%, 48%, 0.107);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 1500px;
+  display: inline-block;
+}
+.pitch.pitch-image{
+  max-width: 60%;
+  height: auto;
+  border-radius: 70%;
+  margin-bottom: 5px;
+}
+.pitch.pitch-title{
+  font-family: Arial,sans-serif;
+  margin: 0;
+  color: hsl(0, 23%, 48%);
+}
+.pitch.pitch-text{
+  font-family: Arial,sans-serif;
+  color: hsl(0, 82%, 40%);
+}
+.relay{
+  border: 1px solid hsl(0, 22%, 75%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 69%, 48%, 0.107);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 1500px;
+  display: inline-block;
+}
+.relay.relay-image{
+  max-width: 60%;
+  height: auto;
+  border-radius: 70%;
+  margin-bottom: 5px;
+}
+.relay.relay-title{
+  font-family: Arial,sans-serif;
+  margin: 0;
+  color: hsl(0, 23%, 48%);
+}
+.relay.relay-text{
+  font-family: Arial,sans-serif;
+  color: hsl(0, 82%, 40%);
+}
